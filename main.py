@@ -80,6 +80,6 @@ table_data = [["Название", "Категория", "Популярност
 table_data.extend(parsed_programs)
 pprint(table_data)
 
-with open("programs_knowledge_base.csv", 'w', newline='') as f:
+with open("/csv_data/programs_knowledge_base.csv", 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerows(table_data)
